@@ -45,8 +45,9 @@ ExecStart=/usr/bin/rawdog -uw
 
 Lastly start and enable the timer:
 ```
-$ systemctl start rawdog.timer
-$ systemctl enable rawdog.timer
+$ systemctl start --user rawdog.timer
+$ systemctl enable --user --now rawdog.timer
 ```
 
+Be sure to use the `--user` option to execute the service as the current user.
 You can check the status of the timer with `$ systemctl status -l rawdog.service` and `$ systemctl list-timers`.
