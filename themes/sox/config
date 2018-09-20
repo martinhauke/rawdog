@@ -116,7 +116,7 @@ pagetemplate default
 # only be included if __items__ would expand to something other than
 # the empty string. Ifs can be nested, and __else__ is supported.
 # (This also works for the other templates, but it's most useful here.)
-itemtemplate default
+itemtemplate themes/sox/item.html
 
 # The template used to generate the feed list (__feeds__ above). Use "rawdog
 # -s feedlist" to show the current template.
@@ -147,7 +147,7 @@ feeditemtemplate default
 # directory. Specify this as "-" to write the HTML to stdout.
 # (You will probably want to make this an absolute path, else rawdog will write
 # to a file in your ~/.rawdog directory.)
-outputfile /home/glados/.rawdog/feeds.html
+outputfile ~/.rawdog/feeds.html
 #outputfile /home/you/public_html/rawdog.html
 
 # Whether to use a <meta http-equiv="Refresh" ...> tag in the generated
@@ -157,7 +157,7 @@ outputfile /home/glados/.rawdog/feeds.html
 # (This works by controlling whether the default template includes
 # __refresh__; if you use a custom template, __refresh__ is always
 # available.)
-userefresh true
+userefresh false
 
 # Whether to show the list of active feeds in the generated HTML.
 # (This works by controlling whether the default template includes
