@@ -52,7 +52,7 @@ currentonly false
 
 # Whether to divide the articles up by day, writing a "dayformat" heading
 # before each set.
-daysections true
+daysections false
 
 # The format to write day headings in. See "man strftime" for more
 # information; for example:
@@ -147,7 +147,7 @@ feeditemtemplate themes/sox/filter-item.html
 # directory. Specify this as "-" to write the HTML to stdout.
 # (You will probably want to make this an absolute path, else rawdog will write
 # to a file in your ~/.rawdog directory.)
-outputfile /home/glados/.rawdog/feeds.html
+outputfile /home/chell/.rawdog/feeds.html
 #outputfile /home/you/public_html/rawdog.html
 
 # Whether to use a <meta http-equiv="Refresh" ...> tag in the generated
