@@ -87,7 +87,7 @@ datetimeformat %H:%M, %A, %d %B
 # You can define additional strings using "define" in this config file; for
 # example, if you say "define myname Adam Sampson", then "__myname__" will be
 # replaced by "Adam Sampson" in the output.
-pagetemplate themes/sox/page.html
+pagetemplate themes/sox/templates/page.html
 
 # Similarly, the template used for each item shown. Use "rawdog -s item" to
 # show the template currently in use as a starting-point for customisation.
@@ -116,13 +116,13 @@ pagetemplate themes/sox/page.html
 # only be included if __items__ would expand to something other than
 # the empty string. Ifs can be nested, and __else__ is supported.
 # (This also works for the other templates, but it's most useful here.)
-itemtemplate themes/sox/item.html
+itemtemplate themes/sox/templates/item.html
 
 # The template used to generate the feed list (__feeds__ above). Use "rawdog
 # -s feedlist" to show the current template.
 # The following strings will be replaced in the output:
 # __feeditems__       The feed items
-feedlisttemplate themes/sox/filter.html
+feedlisttemplate themes/sox/templates/filter.html
 
 # The template used to generate each item in the feed list. Use "rawdog
 # -s feeditem" to show the current template.
@@ -141,13 +141,13 @@ feedlisttemplate themes/sox/filter.html
 #                     The time when the feed was last updated
 # __feed_next_update__
 #                     The time when the feed will next need updating
-feeditemtemplate themes/sox/filter-item.html
+feeditemtemplate themes/sox/templates/filter-item.html
 
 # Where to write the output HTML to. You should place style.css in the same
 # directory. Specify this as "-" to write the HTML to stdout.
 # (You will probably want to make this an absolute path, else rawdog will write
 # to a file in your ~/.rawdog directory.)
-outputfile /home/chell/.rawdog/feeds.html
+outputfile /home/glados/.rawdog/feeds.html
 #outputfile /home/you/public_html/rawdog.html
 
 # Whether to use a <meta http-equiv="Refresh" ...> tag in the generated
